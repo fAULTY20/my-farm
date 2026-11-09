@@ -1,11 +1,13 @@
-# Refreshes data/weather.json twice a day (about 5:15 AM and 5:15 PM India time)
-# and commits it, so the hosted app always shows a fresh forecast.
+# Refreshes data/weather.json (and mandi prices, once the DATA_GOV_KEY secret is added)
+# three times a day, about 5:15 AM, 5:15 PM and 9:45 PM India time, and commits the changes,
+# so the hosted app always shows fresh data.
 name: Update weather
 
 on:
   schedule:
     - cron: "47 23 * * *"   # 5:17 AM IST
     - cron: "47 11 * * *"   # 5:17 PM IST
+    - cron: "17 16 * * *"   # 9:47 PM IST (most markets have reported by then)
   workflow_dispatch: {}      # lets you press "Run workflow" by hand
 
 permissions:
@@ -18,19 +20,28 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - run: python weather.py
+      - name: Weather
+        run: python weather.py
+      - name: Mandi prices
+        if: ${{ hashFiles('prices.py') != '' }}
+        continue-on-error: true      # a slow government server must not block the weather update
+        env:
+          DATA_GOV_KEY: ${{ secrets.DATA_GOV_KEY }}
+        run: python prices.py
       - name: Commit if changed
         run: |
           git config user.name "weather-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/weather.json
+          if [ -f data/prices.json ]; then git add data/prices.json; fi
           git diff --cached --quiet && echo "No change" && exit 0
-          git commit -m "Update weather $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+          git commit -m "Update data $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+          git pull --rebase --quiet
           git push
