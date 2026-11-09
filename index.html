@@ -52,37 +52,38 @@ input,select{width:100%;padding:11px;font:inherit;border:1px solid var(--line);b
 <script>
 const S={ta:{app:"என் பண்ணை",today:"இன்று",land:"நிலம்",rain:"மழை",money:"வரவு செலவு",act:"இன்றைய பணி",now:"இப்போது",fc:"வானிலை முன்னறிவிப்பு",al:"எச்சரிக்கைகள்",noal:"எச்சரிக்கை இல்லை",rr:"சமீபத்திய மழை",l7:"கடந்த 7 நாள்",l30:"கடந்த 30 நாள்",sr:"மழை பெய்து (நாள்)",veg:"பயிர் பசுமை (NDVI)",hum:"ஈரப்பதம்",mm:"மி.மீ",soon:"பயிர் ஆலோசனை விரைவில் சேர்க்கப்படும்.",zmap:"நில மண்டலங்கள்",zavg:"சராசரி மண்டலம்",zlat:"தற்போதைய பசுமை",area:"பரப்பு",ac:"ஏக்கர்",ha:"ஹெக்டேர்",hi:"அதிக பசுமை",md:"நடுத்தர",lo:"குறைவு",zn:"மண்டலம்",zh:"ஹெ.",zn2:"சராசரி",zdry:"வறட்சி மாதம்",zl:"இப்போது",zwhy:"இது ஒப்பீடு மட்டுமே. காரணம் மண் பரிசோதனையுடன் பார்க்கப்படும்.",mr:"மாத மழை (மி.மீ)",ss:"பருவ மழை",season:"பருவம்",pct:"சாதாரணத்தில் %",cost:"செலவு",inc:"வருமானம்",prof:"லாபம்",add:"சேர்",item:"விவரம்",amt:"தொகை (₹)",cpa:"ஏக்கருக்கு செலவு",none:"இன்னும் பதிவு இல்லை",err:"தரவு ஏற்ற முடியவில்லை. இணைய இணைப்பைச் சரிபார்த்து மீண்டும் திறக்கவும்.",stale:"வானிலை தகவல் பழையது",stale2:"நாட்களுக்கு முன் புதுப்பிக்கப்பட்டது. இணையத்துடன் மீண்டும் திறக்கவும்.",updated:"புதுப்பிப்பு",sparse:"மிகக் குறைவு",low:"குறைவு",mod:"மிதம்",dense:"அடர்த்தி",winter:"குளிர்காலம்",summer:"கோடை",sw_monsoon:"தென்மேற்கு பருவமழை",ne_monsoon:"வடகிழக்கு பருவமழை",inc2:"முழு"},
 en:{app:"My Farm",today:"Today",land:"Land",rain:"Rain",money:"Money",act:"Today's action",now:"Right now",fc:"Weather forecast",al:"Alerts",noal:"No alerts",rr:"Recent rain",l7:"Last 7 days",l30:"Last 30 days",sr:"Days since rain",veg:"Crop greenness (NDVI)",hum:"Humidity",mm:"mm",soon:"Crop advice will be added soon.",zmap:"Land zones",zavg:"Average zone",zlat:"Current greenness",area:"Area",ac:"acres",ha:"hectares",hi:"High greenness",md:"Medium",lo:"Low",zn:"Zone",zh:"ha",zn2:"Average",zdry:"Dry months",zl:"Now",zwhy:"This is a comparison only. The reason will come from the soil test.",mr:"Monthly rain (mm)",ss:"Seasonal rain",season:"Season",pct:"% of normal",cost:"Cost",inc:"Income",prof:"Profit",add:"Add",item:"Item",amt:"Amount (₹)",cpa:"Cost per acre",none:"No entries yet",err:"Could not load data. Check the internet connection and open the app again.",stale:"Weather data is old",stale2:"days since the last update. Open the app again with internet.",updated:"Updated",sparse:"Very low",low:"Low",mod:"Moderate",dense:"Dense",winter:"Winter",summer:"Summer",sw_monsoon:"SW monsoon",ne_monsoon:"NE monsoon"}};
-Object.assign(S.ta,{wat:"இன்று பாசனம் தேவையா?",moist:"மண் ஈரம் (மதிப்பீடு)",stress:"கோடு = பயிர் வாடத் தொடங்கும் நிலை",wnote:"மழை, ஆவியாதல் கொண்டு கணக்கிட்டது. நீங்கள் ஏற்கனவே செய்த பாசனம் இன்னும் சேர்க்கப்படவில்லை.",listen:"🔊 கேளுங்கள்",stop:"■ நிறுத்து",soil:"மண்",sfind:"முக்கிய கண்டுபிடிப்புகள்",ssamp:"மண் மாதிரிகள் (செப் 2024)",swater:"பாசன நீர் பரிசோதனை",snote:"பரிசோதனை செப்டம்பர் 2024-ல் செய்யப்பட்டது. இந்த பருவத்துக்குப் பின் மீண்டும் பரிசோதிக்கவும். அளவுகளுக்கு வேளாண் அலுவலரை அணுகவும்.",sp:"அளவு",slim:"வரம்பு",ph:"pH",oc:"கரிமம்",nn:"தழை",pp:"மணி",kk:"சாம்பல்",zn:"துத்த.",cu:"தாமிரம்",sl:"மாதிரி"});
-Object.assign(S.en,{wat:"Water today?",moist:"Soil moisture (estimate)",stress:"line = crop starts to suffer",wnote:"Estimate from rain and evaporation. Irrigation you already gave is not counted yet.",listen:"🔊 Listen",stop:"■ Stop",soil:"Soil",sfind:"Key findings",ssamp:"Soil samples (Sep 2024)",swater:"Irrigation water test",snote:"Tested in Sep 2024. Retest after this season. Ask the Agricultural Officer for doses.",sp:"Value",slim:"Limit",ph:"pH",oc:"Org. C",nn:"N",pp:"P",kk:"K",zn:"Zn",cu:"Cu",sl:"Sample"});
-let L="ta",tab="today",zmode="avg",F=null,W=null,SO=null,led=[];
-try{L=localStorage.getItem("lang")||"ta";led=JSON.parse(localStorage.getItem("ledger")||"[]")}catch(e){}
+Object.assign(S.ta,{wat:"இன்று பாசனம் தேவையா?",moist:"மண் ஈரம் (மதிப்பீடு)",stress:"கோடு = பயிர் வாடத் தொடங்கும் நிலை",wnote:"மழை, ஆவியாதல் கொண்டு கணக்கிட்டது. பாசனம் செய்ததும் குறிப்பேட்டில் 💧 பதிவு செய்யுங்கள், அது கணக்கில் சேரும்.",listen:"🔊 கேளுங்கள்",stop:"■ நிறுத்து",soil:"மண்",sfind:"முக்கிய கண்டுபிடிப்புகள்",ssamp:"மண் மாதிரிகள் (செப் 2024)",swater:"பாசன நீர் பரிசோதனை",snote:"பரிசோதனை செப்டம்பர் 2024-ல் செய்யப்பட்டது. இந்த பருவத்துக்குப் பின் மீண்டும் பரிசோதிக்கவும். அளவுகளுக்கு வேளாண் அலுவலரை அணுகவும்.",sp:"அளவு",slim:"வரம்பு",ph:"pH",oc:"கரிமம்",nn:"தழை",pp:"மணி",kk:"சாம்பல்",zinc:"துத்த.",cu:"தாமிரம்",sl:"மாதிரி"});
+Object.assign(S.en,{wat:"Water today?",moist:"Soil moisture (estimate)",stress:"line = crop starts to suffer",wnote:"Estimate from rain and evaporation. Log each watering in the Diary (💧) and it will be counted.",listen:"🔊 Listen",stop:"■ Stop",soil:"Soil",sfind:"Key findings",ssamp:"Soil samples (Sep 2024)",swater:"Irrigation water test",snote:"Tested in Sep 2024. Retest after this season. Ask the Agricultural Officer for doses.",sp:"Value",slim:"Limit",ph:"pH",oc:"Org. C",nn:"N",pp:"P",kk:"K",zinc:"Zn",cu:"Cu",sl:"Sample"});
+let L="ta",tab="today",zmode="avg",F=null,W=null,SO=null;
+try{L=localStorage.getItem("lang")||"ta"}catch(e){}
 const t=k=>S[L][k]||k, $=id=>document.getElementById(id), n1=x=>x==null?"-":(+x).toFixed(1);
 const LV=l=>"lv-"+l;
 function ndviCol(v){if(v==null)return"#999";const x=Math.max(0,Math.min(1,(v-.2)/.45));const r=x<.5?220:Math.round(220-(x-.5)*2*150),g=x<.5?Math.round(70+x*2*130):200;return`rgb(${r},${g},70)`}
 function ndviLbl(v){return v<.25?t("sparse"):v<.4?t("low"):v<.6?t("mod"):t("dense")}
-function save(){try{localStorage.setItem("ledger",JSON.stringify(led))}catch(e){}}
 
+function wNow(){return window.adjWater?adjWater(W.water,W.today):W.water}
 function today(){
- const a=W.alerts[0],lv=a?a.level:"ok",ac=W.todays_action,c=W.current,rr=W.recent_rain,nv=F.ndvi_latest_observation;
+ const wa=wNow(),drop=wa&&wa.adjusted&&wa.status!="irrigate",AL=W.alerts.filter(x=>!(drop&&(x.id=="irrigate"||x.id=="dry_spell"))),a=AL[0],lv=a?a.level:"ok",ac=a?{en:a.action_en,ta:a.action_ta}:{en:"No weather concerns. Continue normal farm work.",ta:"வானிலை கவலை எதுவும் இல்லை. வழக்கமான வேலைகளைத் தொடருங்கள்."},c=W.current,rr=W.recent_rain,nv=F.ndvi_latest_observation;
  const age=(Date.now()-new Date(W.generated_at))/864e5;
  let h=(age>=1.5?`<div class="card lv-watch"><b>${t("stale")}</b><div>${Math.floor(age)} ${t("stale2")}</div></div>`:"")+`<div class="card ${LV(lv)}">${"speechSynthesis" in window?`<button class="spk" id="spk" onclick="speak()">${t("listen")}</button>`:""}<h2>${t("act")}</h2><div class="act">${ac[L]}</div></div>${water()}
  <div class="card"><h2>${t("now")}</h2><div class="row"><div><div class="big">${Math.round(c.temp_c)}°C</div><div class="mut">${c["weather_"+L]}</div></div><div><div class="big">${c.humidity_pct}%</div><div class="mut">${t("hum")}</div></div></div></div>
  <div class="card"><h2>${t("fc")}</h2><div class="strip">${W.forecast.map(d=>`<div class="day ${d.is_today?"t":""}"><b style="font-size:${L=="ta"?15:17}px">${L=="ta"?d.weekday_ta:d.weekday_en.slice(0,3)}</b><div class="mut">${d.date.slice(5)}</div><div>${Math.round(d.tmax)}° / ${Math.round(d.tmin)}°</div><div style="color:#2b78c5;font-weight:700">${n1(d.rain_mm)} ${t("mm")}</div><div class="mut">${d.rain_prob??"-"}%</div></div>`).join("")}</div></div>
- <div class="card"><h2>${t("al")}</h2>${W.alerts.length?W.alerts.map(x=>`<div class="al ${LV(x.level)}"><b>${x["title_"+L]}</b><div>${x["detail_"+L]}</div><div class="mut">${x["action_"+L]}</div></div>`).join(""):`<div>${t("noal")}</div>`}</div>
+ <div class="card"><h2>${t("al")}</h2>${AL.length?AL.map(x=>`<div class="al ${LV(x.level)}"><b>${x["title_"+L]}</b><div>${x["detail_"+L]}</div><div class="mut">${x["action_"+L]}</div></div>`).join(""):`<div>${t("noal")}</div>`}</div>
  <div class="card"><h2>${t("rr")}</h2><div class="row"><div><div class="big">${n1(rr.last_7_days_mm)}</div><div class="mut">${t("l7")} (${t("mm")})</div></div><div><div class="big">${n1(rr.last_30_days_mm)}</div><div class="mut">${t("l30")} (${t("mm")})</div></div><div><div class="big">${rr.days_since_rain??"-"}</div><div class="mut">${t("sr")}</div></div></div></div>
  <div class="card"><h2>${t("veg")}</h2><div class="row"><div><div class="big" style="color:${ndviCol(nv.ndvi)}">${nv.ndvi}</div><div class="mut">${ndviLbl(nv.ndvi)} · ${nv.date}</div></div></div></div>
  <div class="card mut">${t("soon")}<br>${t("updated")}: ${W.generated_at.slice(0,16).replace("T"," ")}</div>`;
  return h}
 
 function water(){
- const w=W.water;if(!w)return"";
+ const w=wNow();if(!w)return"";
  const lv={irrigate:"warning",wait_rain:"watch",soon:"watch",ok:"ok"}[w.status]||"info",col={irrigate:"#d9534f",wait_rain:"#e0a030",soon:"#e0a030",ok:"#2e9d57"}[w.status],line=100*(1-w.raw_mm/w.taw_mm);
  return `<div class="card ${LV(lv)}"><h2>💧 ${t("wat")}</h2><div style="font-weight:600">${w["text_"+L]}</div>
  <div class="mut" style="margin-top:8px">${t("moist")}: ${w.moisture_pct}%</div><div class="gauge"><i style="width:${Math.max(3,w.moisture_pct)}%;background:${col}"></i><b style="left:${line}%"></b></div><div class="mut">${t("stress")}</div>
  <div class="mut" style="margin-top:6px">${w["check_"+L]}<br>${t("wnote")}</div></div>`}
 function speak(){
  const ss=speechSynthesis;if(ss.speaking){ss.cancel();$("spk").textContent=t("listen");return}
- const txt=[W.todays_action[L],W.water?W.water["text_"+L]:""].join(". ").replace(/மி\.மீ/g,"மில்லிமீட்டர்");
+ const wa=wNow(),a=W.alerts.filter(x=>!(wa&&wa.adjusted&&wa.status!="irrigate"&&(x.id=="irrigate"||x.id=="dry_spell")))[0];
+ const txt=[a?a["action_"+L]:W.todays_action[L],wa?wa["text_"+L]:""].join(". ").replace(/மி\.மீ/g,"மில்லிமீட்டர்");
  const u=new SpeechSynthesisUtterance(txt),code=L=="ta"?"ta":"en",v=ss.getVoices().find(x=>x.lang.toLowerCase().startsWith(code+"-in"))||ss.getVoices().find(x=>x.lang.toLowerCase().startsWith(code));
  u.lang=L=="ta"?"ta-IN":"en-IN";if(v)u.voice=v;u.rate=.9;u.onend=u.onerror=()=>{const b=$("spk");if(b)b.textContent=t("listen")};
  ss.speak(u);$("spk").textContent=t("stop")}
@@ -108,12 +109,6 @@ function rain(){
  return `<div class="card"><h2>${t("mr")}</h2><div class="scroll"><svg viewBox="0 0 ${r.length*bw+8} ${H+22}" style="min-width:${r.length*bw}px;width:100%"><polyline points="${pts}" fill="none" stroke="#2e9d57" stroke-width="2.5"/>${bars}${lab}</svg></div><div class="mut"><span style="color:#2b78c5">■</span> ${t("mm")} &nbsp; <span style="color:#2e9d57">━</span> NDVI</div></div>
  <div class="card scroll"><h2>${t("ss")}</h2><table><tr><th>${t("season")}</th><th>${t("mm")}</th><th>${t("pct")}</th></tr>${ss.map(s=>`<tr><td>${s.year} ${t(s.season)}${s.complete?"":" *"}</td><td>${n1(s.mm)}</td><td>${s.pct_of_normal??"-"}</td></tr>`).join("")}</table><div class="mut">* ${L=="ta"?"முழுமையற்ற பருவம்":"incomplete season"} · ${L=="ta"?"செயற்கைக்கோள் மதிப்பீடு":"satellite estimate"}</div></div>`}
 
-function money(){
- const c=led.filter(e=>e.type=="c").reduce((a,e)=>a+e.amt,0),i=led.filter(e=>e.type=="i").reduce((a,e)=>a+e.amt,0),ac=F.farm.area_acres_from_boundary,f=x=>"₹"+Math.round(x).toLocaleString("en-IN");
- return `<div class="card"><div class="row"><div><div class="mut">${t("cost")}</div><div class="big">${f(c)}</div></div><div><div class="mut">${t("inc")}</div><div class="big">${f(i)}</div></div><div><div class="mut">${t("prof")}</div><div class="big" style="color:${i-c>=0?"#2e9d57":"#d9534f"}">${f(i-c)}</div></div></div><div class="mut">${t("cpa")}: ${f(c/ac)}</div></div>
- <div class="card"><select id="mt"><option value="c">${t("cost")}</option><option value="i">${t("inc")}</option></select><input id="mi" placeholder="${t("item")}"><input id="ma" type="number" inputmode="numeric" placeholder="${t("amt")}"><button class="btn" onclick="addE()">${t("add")}</button></div>
- <div class="card">${led.length?led.map((e,k)=>`<div class="row" style="align-items:center;border-bottom:1px solid var(--line)"><div style="flex:3"><b>${e.item}</b><div class="mut">${e.date}</div></div><div style="flex:2;text-align:right;color:${e.type=="i"?"#2e9d57":"#d9534f"}">${e.type=="i"?"+":"-"}${f(e.amt)}</div><button class="x" onclick="delE(${k})">×</button></div>`).join(""):`<div class="mut">${t("none")}</div>`}</div>`}
-
 function soil(){
  if(!SO)return`<div class="card">${t("err")}</div>`;
  const col={low:"#f4c7c3",med:"#fff2b3",high:"#cfe8b0",ok:"#cfe8b0",info:"transparent"},c=(v,st)=>`<td style="background:${col[st]};color:${st=="info"?"inherit":"#1c2a22"}">${v}</td>`;
@@ -121,24 +116,23 @@ function soil(){
  const rows=SO.samples.map(m=>{const q=m.status;return`<tr><td>${m.id}</td>${c(m.ph,"info")}${c(m.oc,q.oc)}${c(m.n,q.n)}${c(m.p,q.p)}${c(m.k,q.k)}${c(m.zn,q.zn)}${c(m.cu,q.cu)}</tr>`}).join("");
  const wr=SO.water.rows.map(r=>`<tr><td>${r.k}</td>${c(r.v,r.st)}<td>${r.limit}</td></tr>`).join("");
  return `<div class="card"><h2>${t("sfind")}</h2>${fl}</div>
- <div class="card scroll"><h2>${t("ssamp")}</h2><table><tr><th>${t("sl")}</th><th>${t("ph")}</th><th>${t("oc")}</th><th>${t("nn")}</th><th>${t("pp")}</th><th>${t("kk")}</th><th>${t("zn")}</th><th>${t("cu")}</th></tr>${rows}</table>
+ <div class="card scroll"><h2>${t("ssamp")}</h2><table><tr><th>${t("sl")}</th><th>${t("ph")}</th><th>${t("oc")}</th><th>${t("nn")}</th><th>${t("pp")}</th><th>${t("kk")}</th><th>${t("zinc")}</th><th>${t("cu")}</th></tr>${rows}</table>
  <div class="mut" style="margin-top:8px">${SO.samples.map(m=>m.id+": "+m["label_"+L]).join(" · ")}</div></div>
  <div class="card scroll"><h2>${t("swater")}</h2><table><tr><th></th><th>${t("sp")}</th><th>${t("slim")}</th></tr>${wr}</table><div class="mut" style="margin-top:8px">${SO.water.lab_class} · ${SO.water.main_salt}</div></div>
  <div class="card mut">${t("snote")}</div>`}
-function addE(){const a=+$("ma").value,i=$("mi").value.trim();if(!a||!i)return;led.unshift({type:$("mt").value,item:i,amt:a,date:new Date().toISOString().slice(0,10)});save();go()}
-function delE(k){led.splice(k,1);save();go()}
 
 function go(){
- if("speechSynthesis" in window&&speechSynthesis.speaking)speechSynthesis.cancel();
  $("ttl").textContent=t("app");$("lang").textContent=L=="ta"?"EN":"தமிழ்";
- $("nav").innerHTML=[["today","☀️"],["land","🗺️"],["rain","🌧️"],["soil","🌱"],["money","₹"]].map(([k,i])=>`<button class="${tab==k?"on":""}" onclick="tab='${k}';go();scrollTo(0,0)">${i}<br>${t(k)}</button>`).join("");
+ $("nav").innerHTML=[["today","☀️"],["land","🗺️"],["rain","🌧️"],["soil","🌱"],["diary","📒"]].map(([k,i])=>`<button class="${tab==k?"on":""}" onclick="if(window.speechSynthesis)speechSynthesis.cancel();tab='${k}';go();scrollTo(0,0)">${i}<br>${t(k)}</button>`).join("");
  document.documentElement.lang=L;
- try{$("app").innerHTML={today,land,rain,soil,money}[tab]()}catch(e){$("app").innerHTML=`<div class="card">${t("err")}<br><small>${e.message}</small></div>`}}
+ try{$("app").innerHTML={today,land,rain,soil,diary:window.diary}[tab]()}catch(e){$("app").innerHTML=`<div class="card">${t("err")}<br><small>${e.message}</small></div>`}}
 $("lang").onclick=()=>{if("speechSynthesis" in window)speechSynthesis.cancel();L=L=="ta"?"en":"ta";try{localStorage.setItem("lang",L)}catch(e){}go()};
 Promise.all([fetch("data/farm_data.json").then(r=>r.json()),fetch("data/weather.json").then(r=>r.json()),fetch("data/soil.json").then(r=>r.json()).catch(()=>null)])
- .then(([f,w,so])=>{F=f;W=w;SO=so;go()}).catch(()=>{$("app").innerHTML=`<div class="card">${t("err")}</div>`;go=()=>{}});
+ .then(([f,w,so])=>{F=f;W=w;SO=so;go();if(window.diaryInit)diaryInit()}).catch(()=>{$("app").innerHTML=`<div class="card">${t("err")}</div>`;go=()=>{}});
 $("ttl").textContent=t("app");$("lang").textContent="EN";
 if("serviceWorker" in navigator&&location.protocol.startsWith("http"))addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 </script>
+<script src="config.js"></script>
+<script src="diary.js"></script>
 </body>
 </html>
