@@ -33,7 +33,7 @@ h2{margin:0 0 8px;font-size:18px;color:var(--g)}
 .day.t{border-color:var(--g);border-width:2px}
 .al{border-radius:10px;padding:10px;margin-top:8px}
 nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
-nav button{flex:1;border:0;background:none;color:var(--mut);padding:10px 2px;font:inherit;font-size:15px}
+nav button{flex:1;min-width:0;border:0;background:none;color:var(--mut);padding:9px 1px;font:inherit;font-size:12.5px;line-height:1.3;overflow:hidden;text-overflow:ellipsis}
 nav button.on{color:var(--g);font-weight:700;border-top:3px solid var(--g)}
 table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:6px 4px;border-bottom:1px solid var(--line)}
 .seg{display:flex;gap:6px;margin-bottom:8px}.seg button{flex:1;padding:9px;border:1px solid var(--g);background:none;color:var(--g);border-radius:10px;font:inherit;font-size:15px}.seg button.on{background:var(--g);color:var(--card)}
@@ -123,9 +123,9 @@ function soil(){
 
 function go(){
  $("ttl").textContent=t("app");$("lang").textContent=L=="ta"?"EN":"தமிழ்";
- $("nav").innerHTML=[["today","☀️"],["land","🗺️"],["rain","🌧️"],["soil","🌱"],["diary","📒"]].map(([k,i])=>`<button class="${tab==k?"on":""}" onclick="if(window.speechSynthesis)speechSynthesis.cancel();tab='${k}';go();scrollTo(0,0)">${i}<br>${t(k)}</button>`).join("");
+ $("nav").innerHTML=[["today","☀️"],["diary","📒"],["prices","📈"],["rain","🌧️"],["land","🗺️"],["soil","🌱"]].map(([k,i])=>`<button class="${tab==k?"on":""}" onclick="if(window.speechSynthesis)speechSynthesis.cancel();tab='${k}';go();scrollTo(0,0)">${i}<br>${t(k)}</button>`).join("");
  document.documentElement.lang=L;
- try{$("app").innerHTML={today,land,rain,soil,diary:window.diary}[tab]()}catch(e){$("app").innerHTML=`<div class="card">${t("err")}<br><small>${e.message}</small></div>`}}
+ try{$("app").innerHTML={today,land,rain,soil,diary:window.diary,prices:window.prices}[tab]()}catch(e){$("app").innerHTML=`<div class="card">${t("err")}<br><small>${e.message}</small></div>`}}
 $("lang").onclick=()=>{if("speechSynthesis" in window)speechSynthesis.cancel();L=L=="ta"?"en":"ta";try{localStorage.setItem("lang",L)}catch(e){}go()};
 Promise.all([fetch("data/farm_data.json").then(r=>r.json()),fetch("data/weather.json").then(r=>r.json()),fetch("data/soil.json").then(r=>r.json()).catch(()=>null)])
  .then(([f,w,so])=>{F=f;W=w;SO=so;go();if(window.diaryInit)diaryInit()}).catch(()=>{$("app").innerHTML=`<div class="card">${t("err")}</div>`;go=()=>{}});
@@ -134,5 +134,6 @@ if("serviceWorker" in navigator&&location.protocol.startsWith("http"))addEventLi
 </script>
 <script src="config.js"></script>
 <script src="diary.js"></script>
+<script src="prices.js"></script>
 </body>
 </html>

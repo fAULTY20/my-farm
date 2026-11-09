@@ -1,9 +1,9 @@
 // Farm Intelligence service worker: lets the app open without internet.
 // With internet: always fetch the newest files (and save a copy).
 // Without internet, or if the network is very slow: use the saved copy.
-const VER = "fi-v4";
+const VER = "fi-v5";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png",
-  "icons/apple-touch-icon.png", "icons/favicon.png", "diary.js", "config.js",
+  "icons/apple-touch-icon.png", "icons/favicon.png", "diary.js", "prices.js", "config.js",
   "data/farm_data.json", "data/weather.json", "data/soil.json"];
 
 self.addEventListener("install", e => {
