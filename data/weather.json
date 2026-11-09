@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T17:29:07+05:30",
+ "generated_at": "2026-11-09T17:50:48+05:30",
  "source": "Open-Meteo (model forecast + recent model data)",
  "location": {
   "lat": 10.514043,
@@ -7,9 +7,9 @@
  },
  "today": "2026-11-09",
  "current": {
-  "temp_c": 24.2,
-  "humidity_pct": 96,
-  "wind_kmh": 10.6,
+  "temp_c": 23.9,
+  "humidity_pct": 98,
+  "wind_kmh": 9.1,
   "rain_now_mm": 0.1,
   "weather_en": "Drizzle",
   "weather_ta": "தூறல்"
