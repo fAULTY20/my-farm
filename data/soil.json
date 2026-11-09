@@ -1,0 +1,319 @@
+{
+ "tested": "2024-09-03",
+ "reported": "2024-09-05",
+ "lab": "Soil Testing Laboratory, Tiruchirappalli-20",
+ "samples": [
+  {
+   "id": 1,
+   "lab_no": "1492",
+   "label_en": "Sample 1 (survey 552/2, near well?)",
+   "label_ta": "மாதிரி 1 (552/2)",
+   "texture_en": "Sandy clay loam",
+   "texture_ta": "மணல் களி குறுமண்",
+   "ph": 8.29,
+   "ec": 0.14,
+   "oc": 0.48,
+   "n": 86.8,
+   "p": 3.0,
+   "k": 197,
+   "fe": 6.34,
+   "mn": 3.41,
+   "zn": 0.78,
+   "cu": 0.61,
+   "status": {
+    "oc": "low",
+    "n": "low",
+    "p": "low",
+    "k": "high",
+    "fe": "ok",
+    "mn": "ok",
+    "zn": "low",
+    "cu": "low"
+   }
+  },
+  {
+   "id": 2,
+   "lab_no": "1493",
+   "label_en": "Sample 2 (neem tree)",
+   "label_ta": "மாதிரி 2 (வேப்பமரம்)",
+   "texture_en": "Sandy loam",
+   "texture_ta": "மணல் குறுமண்",
+   "ph": 8.07,
+   "ec": 0.16,
+   "oc": 0.47,
+   "n": 82.6,
+   "p": 3.0,
+   "k": 173,
+   "fe": 5.47,
+   "mn": 3.52,
+   "zn": 0.81,
+   "cu": 0.57,
+   "status": {
+    "oc": "low",
+    "n": "low",
+    "p": "low",
+    "k": "high",
+    "fe": "ok",
+    "mn": "ok",
+    "zn": "low",
+    "cu": "low"
+   }
+  },
+  {
+   "id": 3,
+   "lab_no": "1494",
+   "label_en": "Sample 3 (Top)",
+   "label_ta": "மாதிரி 3 (மேடு)",
+   "texture_en": "Sandy loam",
+   "texture_ta": "மணல் குறுமண்",
+   "ph": 7.66,
+   "ec": 0.13,
+   "oc": 0.45,
+   "n": 79.8,
+   "p": 3.0,
+   "k": 83,
+   "fe": 6.84,
+   "mn": 3.53,
+   "zn": 0.84,
+   "cu": 0.65,
+   "status": {
+    "oc": "low",
+    "n": "low",
+    "p": "low",
+    "k": "med",
+    "fe": "ok",
+    "mn": "ok",
+    "zn": "low",
+    "cu": "ok"
+   }
+  },
+  {
+   "id": 4,
+   "lab_no": "1495",
+   "label_en": "Sample 4 (Down)",
+   "label_ta": "மாதிரி 4 (கீழ்)",
+   "texture_en": "Sandy loam",
+   "texture_ta": "மணல் குறுமண்",
+   "ph": 7.77,
+   "ec": 0.13,
+   "oc": 0.44,
+   "n": 75.6,
+   "p": 7.0,
+   "k": 133,
+   "fe": 5.34,
+   "mn": 3.52,
+   "zn": 0.84,
+   "cu": 0.61,
+   "status": {
+    "oc": "low",
+    "n": "low",
+    "p": "med",
+    "k": "high",
+    "fe": "ok",
+    "mn": "ok",
+    "zn": "low",
+    "cu": "low"
+   }
+  },
+  {
+   "id": 5,
+   "lab_no": "1496",
+   "label_en": "Sample 5 (Lower)",
+   "label_ta": "மாதிரி 5 (தாழ்வு)",
+   "texture_en": "Sandy loam",
+   "texture_ta": "மணல் குறுமண்",
+   "ph": 7.8,
+   "ec": 0.18,
+   "oc": 0.45,
+   "n": 79.8,
+   "p": 1.0,
+   "k": 129,
+   "fe": 5.71,
+   "mn": 3.63,
+   "zn": 0.74,
+   "cu": 0.65,
+   "status": {
+    "oc": "low",
+    "n": "low",
+    "p": "low",
+    "k": "high",
+    "fe": "ok",
+    "mn": "ok",
+    "zn": "low",
+    "cu": "ok"
+   }
+  }
+ ],
+ "water": {
+  "lab_no": "281",
+  "sample_date": "Sep 2024",
+  "rows": [
+   {
+    "k": "pH",
+    "v": 7.97,
+    "limit": "6.5-7.5",
+    "st": "med"
+   },
+   {
+    "k": "EC (dS/m)",
+    "v": 1.3,
+    "limit": "< 1.0",
+    "st": "med"
+   },
+   {
+    "k": "HCO3 (me/L)",
+    "v": 8.1,
+    "limit": "< 10",
+    "st": "ok"
+   },
+   {
+    "k": "Cl (me/L)",
+    "v": 4.9,
+    "limit": "< 10",
+    "st": "ok"
+   },
+   {
+    "k": "Ca (me/L)",
+    "v": 3.9,
+    "limit": "",
+    "st": "info"
+   },
+   {
+    "k": "Mg (me/L)",
+    "v": 4.8,
+    "limit": "",
+    "st": "info"
+   },
+   {
+    "k": "Na (me/L)",
+    "v": 4.06,
+    "limit": "",
+    "st": "info"
+   },
+   {
+    "k": "K (me/L)",
+    "v": 0.24,
+    "limit": "",
+    "st": "info"
+   },
+   {
+    "k": "SAR",
+    "v": 1.95,
+    "limit": "< 10",
+    "st": "ok"
+   },
+   {
+    "k": "Mg:Ca",
+    "v": 1.23,
+    "limit": "< 3",
+    "st": "ok"
+   },
+   {
+    "k": "RSC (calc.)",
+    "v": -0.6,
+    "limit": "< 1.25",
+    "st": "ok"
+   }
+  ],
+  "lab_class": "C2S1R1",
+  "main_salt": "MgHCO3"
+ },
+ "findings": [
+  {
+   "id": "oc",
+   "level": "watch",
+   "title_en": "Organic matter is low in every sample (0.44-0.48%)",
+   "title_ta": "எல்லா மாதிரிகளிலும் கரிமச்சத்து குறைவு (0.44-0.48%)",
+   "text_en": "This is the biggest weakness. Sandy soil with little organic matter dries fast and holds few nutrients.",
+   "text_ta": "இதுவே மிகப் பெரிய குறை. மணல் மண்ணில் கரிமச்சத்து குறைவாக இருந்தால் நீர், சத்து தங்காது.",
+   "action_en": "Keep adding well-rotted farmyard manure or compost, grow green manure, and use mulch.",
+   "action_ta": "மட்கிய தொழுவுரம் அல்லது உரம், பசுந்தாள் உரம், மூடாக்கு ஆகியவற்றை தொடர்ந்து இடுங்கள்."
+  },
+  {
+   "id": "n",
+   "level": "watch",
+   "title_en": "Nitrogen is low in all 5 samples",
+   "title_ta": "தழைச்சத்து 5 மாதிரிகளிலும் குறைவு",
+   "text_en": "75.6 to 86.8 kg/acre, rated low by the lab.",
+   "text_ta": "75.6 முதல் 86.8 கிலோ/ஏக்கர்; ஆய்வகம் 'குறைவு' என்று குறித்துள்ளது.",
+   "action_en": "Legume crops, green manure and compost build nitrogen in an organic system.",
+   "action_ta": "பயறு வகைப் பயிர்கள், பசுந்தாள் உரம், உரம் மூலம் தழைச்சத்தை உயர்த்தலாம்."
+  },
+  {
+   "id": "p",
+   "level": "watch",
+   "title_en": "Phosphorus is low in 4 of 5 samples",
+   "title_ta": "மணிச்சத்து 5-ல் 4 மாதிரிகளில் குறைவு",
+   "text_en": "1.0 to 3.0 (low) in samples 1, 2, 3, 5. Sample 4 (Down) is medium at 7.0. Alkaline soil also locks phosphorus.",
+   "text_ta": "மாதிரி 1, 2, 3, 5-ல் 1.0 முதல் 3.0 (குறைவு). மாதிரி 4-ல் 7.0 (மத்திமம்). காரமண்ணில் மணிச்சத்து கிடைப்பதும் குறையும்.",
+   "action_en": "Compost with phosphate-solubilising bacteria can help. Ask the Agricultural Officer about organic-approved phosphate sources.",
+   "action_ta": "உரத்துடன் பாஸ்போ பாக்டீரியா உதவும். கரிம வேளாண்மைக்கு ஏற்ற மணிச்சத்து பற்றி வேளாண் அலுவலரிடம் கேளுங்கள்."
+  },
+  {
+   "id": "k",
+   "level": "ok",
+   "title_en": "Potassium is medium to high",
+   "title_ta": "சாம்பல்சத்து மத்திமம் முதல் அதிகம்",
+   "text_en": "83 to 197. Only sample 3 (Top) is medium.",
+   "text_ta": "83 முதல் 197. மாதிரி 3 (மேடு) மட்டும் மத்திமம்.",
+   "action_en": "No potash needed now.",
+   "action_ta": "தற்போது சாம்பல்சத்து இட தேவையில்லை."
+  },
+  {
+   "id": "micro",
+   "level": "watch",
+   "title_en": "Zinc is low in all 5; copper low in 3",
+   "title_ta": "துத்தநாகம் 5-லும் குறைவு; தாமிரம் 3-ல் குறைவு",
+   "text_en": "Zinc 0.74-0.84 ppm. Copper low in samples 1, 2, 4. Iron and manganese are sufficient.",
+   "text_ta": "துத்தநாகம் 0.74-0.84 பி.பி.எம். தாமிரம் மாதிரி 1, 2, 4-ல் குறைவு. இரும்பு, மாங்கனீசு போதுமானது.",
+   "action_en": "Ask the Agricultural Officer or your organic certifier which zinc and copper sources are allowed for you.",
+   "action_ta": "உங்களுக்கு அனுமதிக்கப்பட்ட துத்தநாகம், தாமிர ஆதாரங்களை வேளாண் அலுவலர் அல்லது கரிமச் சான்றளிப்போரிடம் கேளுங்கள்."
+  },
+  {
+   "id": "ph",
+   "level": "info",
+   "title_en": "Soil is alkaline (pH 7.66-8.29)",
+   "title_ta": "மண் காரத்தன்மை (pH 7.66-8.29)",
+   "text_en": "Sample 1 (8.29) is the most alkaline. Above pH 8, zinc, iron and phosphorus become harder for plants to use.",
+   "text_ta": "மாதிரி 1-ல் (8.29) அதிகம். pH 8-க்கு மேல் துத்தநாகம், இரும்பு, மணிச்சத்து பயிருக்குக் கிடைப்பது குறையும்.",
+   "action_en": "Organic matter helps buffer alkalinity over time.",
+   "action_ta": "கரிமச்சத்து அதிகரித்தால் காரத்தன்மை படிப்படியாகக் குறையும்."
+  },
+  {
+   "id": "ec",
+   "level": "ok",
+   "title_en": "Soil salinity is not a problem (EC 0.13-0.18)",
+   "title_ta": "மண்ணில் உப்புப் பிரச்சினை இல்லை (EC 0.13-0.18)",
+   "text_en": "Very low salts in all samples.",
+   "text_ta": "எல்லா மாதிரிகளிலும் உப்பு மிகக் குறைவு.",
+   "action_en": "",
+   "action_ta": ""
+  },
+  {
+   "id": "tex",
+   "level": "info",
+   "title_en": "Light, well-drained soil",
+   "title_ta": "நீர் விரைந்து வடியும் இலகு மண்",
+   "text_en": "Sandy loam in 4 samples, sandy clay loam in sample 1. Water drains quickly, so dry spells hurt sooner.",
+   "text_ta": "4 மாதிரிகள் மணல் குறுமண்; மாதிரி 1 மணல் களி குறுமண். நீர் விரைவில் வடியும்; வறட்சி விரைவில் பாதிக்கும்.",
+   "action_en": "Mulch, add organic matter, and irrigate in small, frequent amounts.",
+   "action_ta": "மூடாக்கு, கரிம உரம், குறைந்த அளவில் அடிக்கடி பாசனம் நல்லது."
+  },
+  {
+   "id": "water",
+   "level": "watch",
+   "title_en": "Irrigation water is slightly salty (EC 1.30)",
+   "title_ta": "பாசன நீரில் உப்பு சற்று அதிகம் (EC 1.30)",
+   "text_en": "Lab limit is under 1.0. Sodium risk (SAR 1.95) and bicarbonate (8.1) are fine. Most field crops tolerate this; sensitive ones such as beans or onion may lose some yield.",
+   "text_ta": "ஆய்வக வரம்பு 1.0-க்கு கீழ். சோடியம் (SAR 1.95), பைகார்பனேட் (8.1) சரியான அளவில் உள்ளன. பெரும்பாலான பயிர்கள் தாங்கும்; அவரை, வெங்காயம் போன்றவை சற்று பாதிக்கப்படலாம்.",
+   "action_en": "Keep good drainage and let monsoon rain flush salts. Mix with rain or pond water if available.",
+   "action_ta": "நல்ல வடிகால் வைத்து, மழைநீர் உப்பைக் கழுவ விடுங்கள். மழைநீர்/குளத்துநீர் இருந்தால் கலந்து பாய்ச்சலாம்."
+  }
+ ],
+ "notes": [
+  "Values transcribed from handwritten cards; please check against the originals.",
+  "Tests are from Sep 2024: nitrogen, phosphorus and potash change with crops and manure. Retest after this season.",
+  "Sample locations are not yet matched to map zones.",
+  "Guidance is general. Ask the Agricultural Officer for doses."
+ ]
+}
