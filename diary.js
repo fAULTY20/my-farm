@@ -5,8 +5,8 @@ const CFG = window.FARM_CFG || {};
 const OK = !!(CFG.url && CFG.anonKey && /^https:\/\//.test(CFG.url));
 const BASE = OK ? CFG.url.replace(/\/+$/, "") : "";
 
-Object.assign(S.ta, {diary:"குறிப்பேடு",dsign:"காப்பு & பகிர்வுக்கு உள்நுழையவும்",dsignwhy:"உள்நுழைந்தால் பதிவுகள் இணையத்தில் சேமிக்கப்படும், உங்கள் குடும்பத்தினரும் பார்க்கலாம். அதுவரை இந்த போனில் மட்டும் இருக்கும்.",email:"மின்னஞ்சல்",sendcode:"குறியீடு அனுப்பு",code:"மின்னஞ்சலில் வந்த எண்",verify:"உள்நுழை",codesent:"குறியீடு அனுப்பப்பட்டது. மின்னஞ்சலைப் பாருங்கள் (Spam-லும்).",back:"பின்",signout:"வெளியேறு",synced:"✓ சேமிக்கப்பட்டது",waiting:"பதிவேற்றக் காத்திருக்கிறது",offline:"இணையம் இல்லை, பதிவுகள் போனில் பாதுகாப்பாக உள்ளன",notset:"இணைய காப்பு இன்னும் அமைக்கப்படவில்லை. பதிவுகள் இந்த போனில் மட்டும் சேமிக்கப்படும்.",notmember:"இந்த மின்னஞ்சல் பண்ணை பட்டியலில் இல்லை. Supabase-ல் members அட்டவணையில் சேர்க்கவும்.",signedas:"உள்நுழைவு",newentry:"புதிய பதிவு",date:"தேதி",plot:"நிலப் பகுதி",crop:"பயிர்",qty:"அளவு",note:"குறிப்பு",save:"சேமி",cancel:"ரத்து",del:"நீக்கு",delq:"இந்தப் பதிவை நீக்கவா?",full:"முழுமையாக",light:"லேசாக",howmuch:"எவ்வளவு நனைத்தீர்கள்?",all:"அனைத்தும்",fmoney:"பணம்",fwater:"நீர்",fwork:"வேலை",tmonth:"இந்த மாதம்",tyear:"இந்த ஆண்டு",tall:"மொத்தம்",more:"மேலும் காட்டு",mic:"🎤 பேசுங்கள்",listening:"கேட்கிறது…",edit:"திருத்து",wellq:"மேலிருந்து நீர் ஆழம்",rainq:"மழைமானி அளவு",costl:"செலவு (₹)",incl:"வருமானம் (₹)",byme:"நான்",oldmoved:"பழைய வரவு-செலவு பதிவுகள் குறிப்பேட்டிற்கு மாற்றப்பட்டன.",wateredon:"பாசனம் பதிவு",errsync:"சேமிக்க முடியவில்லை, மீண்டும் முயற்சிக்கும்",errcode:"குறியீடு தவறு அல்லது காலாவதி. மீண்டும் அனுப்பவும்.",erremail:"மின்னஞ்சல் அனுப்ப முடியவில்லை. சிறிது நேரம் கழித்து முயற்சிக்கவும்.",nonum:"எண்ணில் மட்டும்"});
-Object.assign(S.en, {diary:"Diary",dsign:"Sign in to back up & share",dsignwhy:"Once signed in, entries are saved online and your family can see them. Until then they stay on this phone only.",email:"Email",sendcode:"Send code",code:"Code from the email",verify:"Sign in",codesent:"Code sent. Check your email (and Spam).",back:"Back",signout:"Sign out",synced:"✓ Saved online",waiting:"waiting to upload",offline:"No internet. Entries are safe on this phone",notset:"Online backup is not set up yet. Entries are saved on this phone only.",notmember:"This email is not on the farm list. Add it to the members table in Supabase.",signedas:"Signed in",newentry:"New entry",date:"Date",plot:"Plot",crop:"Crop",qty:"Quantity",note:"Note",save:"Save",cancel:"Cancel",del:"Delete",delq:"Delete this entry?",full:"Fully",light:"Lightly",howmuch:"How much did you water?",all:"All",fmoney:"Money",fwater:"Water",fwork:"Work",tmonth:"This month",tyear:"This year",tall:"All time",more:"Show more",mic:"🎤 Speak",listening:"Listening…",edit:"Edit",wellq:"Water depth from top",rainq:"Rain gauge reading",costl:"Cost (₹)",incl:"Income (₹)",byme:"me",oldmoved:"Old Money entries were moved into the diary.",wateredon:"Watering logged",errsync:"Could not save online, will retry",errcode:"Wrong or expired code. Send a new one.",erremail:"Could not send the email. Try again in a while.",nonum:"Numbers only"});
+Object.assign(S.ta, {diary:"குறிப்பேடு",dsign:"காப்பு & பகிர்வுக்கு உள்நுழையவும்",dsignwhy:"உள்நுழைந்தால் பதிவுகள் இணையத்தில் சேமிக்கப்படும், உங்கள் குடும்பத்தினரும் பார்க்கலாம். அதுவரை இந்த போனில் மட்டும் இருக்கும்.",email:"மின்னஞ்சல்",sendcode:"உள்நுழைவு இணைப்பை அனுப்பு",sentlink:"உள்நுழைவு இணைப்பு அனுப்பப்பட்டது. இந்த போனிலேயே மின்னஞ்சலைத் திறந்து \"Sign in\" என்பதைத் தொடுங்கள் (Spam-லும் பாருங்கள்).",havecode:"எண் குறியீடு வந்ததா?",errlink:"இணைப்பு காலாவதியானது அல்லது ஏற்கனவே பயன்படுத்தப்பட்டது. புதிய இணைப்பை அனுப்பவும்.",welcome:"உள்நுழைந்துவிட்டீர்கள்!",code:"மின்னஞ்சலில் வந்த எண்",verify:"உள்நுழை",codesent:"குறியீடு அனுப்பப்பட்டது. மின்னஞ்சலைப் பாருங்கள் (Spam-லும்).",back:"பின்",signout:"வெளியேறு",synced:"✓ சேமிக்கப்பட்டது",waiting:"பதிவேற்றக் காத்திருக்கிறது",offline:"இணையம் இல்லை, பதிவுகள் போனில் பாதுகாப்பாக உள்ளன",notset:"இணைய காப்பு இன்னும் அமைக்கப்படவில்லை. பதிவுகள் இந்த போனில் மட்டும் சேமிக்கப்படும்.",notmember:"இந்த மின்னஞ்சல் பண்ணை பட்டியலில் இல்லை. Supabase-ல் members அட்டவணையில் சேர்க்கவும்.",signedas:"உள்நுழைவு",newentry:"புதிய பதிவு",date:"தேதி",plot:"நிலப் பகுதி",crop:"பயிர்",qty:"அளவு",note:"குறிப்பு",save:"சேமி",cancel:"ரத்து",del:"நீக்கு",delq:"இந்தப் பதிவை நீக்கவா?",full:"முழுமையாக",light:"லேசாக",howmuch:"எவ்வளவு நனைத்தீர்கள்?",all:"அனைத்தும்",fmoney:"பணம்",fwater:"நீர்",fwork:"வேலை",tmonth:"இந்த மாதம்",tyear:"இந்த ஆண்டு",tall:"மொத்தம்",more:"மேலும் காட்டு",mic:"🎤 பேசுங்கள்",listening:"கேட்கிறது…",edit:"திருத்து",wellq:"மேலிருந்து நீர் ஆழம்",rainq:"மழைமானி அளவு",costl:"செலவு (₹)",incl:"வருமானம் (₹)",byme:"நான்",oldmoved:"பழைய வரவு-செலவு பதிவுகள் குறிப்பேட்டிற்கு மாற்றப்பட்டன.",wateredon:"பாசனம் பதிவு",errsync:"சேமிக்க முடியவில்லை, மீண்டும் முயற்சிக்கும்",errcode:"குறியீடு தவறு அல்லது காலாவதி. மீண்டும் அனுப்பவும்.",erremail:"மின்னஞ்சல் அனுப்ப முடியவில்லை. சிறிது நேரம் கழித்து முயற்சிக்கவும்.",nonum:"எண்ணில் மட்டும்"});
+Object.assign(S.en, {diary:"Diary",dsign:"Sign in to back up & share",dsignwhy:"Once signed in, entries are saved online and your family can see them. Until then they stay on this phone only.",email:"Email",sendcode:"Send sign-in link",sentlink:"Sign-in link sent. Open the email on this phone and tap \"Sign in\" (check Spam too).",havecode:"Got a number code instead?",errlink:"That link has expired or was already used. Send a new one.",welcome:"You are signed in!",code:"Code from the email",verify:"Sign in",codesent:"Code sent. Check your email (and Spam).",back:"Back",signout:"Sign out",synced:"✓ Saved online",waiting:"waiting to upload",offline:"No internet. Entries are safe on this phone",notset:"Online backup is not set up yet. Entries are saved on this phone only.",notmember:"This email is not on the farm list. Add it to the members table in Supabase.",signedas:"Signed in",newentry:"New entry",date:"Date",plot:"Plot",crop:"Crop",qty:"Quantity",note:"Note",save:"Save",cancel:"Cancel",del:"Delete",delq:"Delete this entry?",full:"Fully",light:"Lightly",howmuch:"How much did you water?",all:"All",fmoney:"Money",fwater:"Water",fwork:"Work",tmonth:"This month",tyear:"This year",tall:"All time",more:"Show more",mic:"🎤 Speak",listening:"Listening…",edit:"Edit",wellq:"Water depth from top",rainq:"Rain gauge reading",costl:"Cost (₹)",incl:"Income (₹)",byme:"me",oldmoved:"Old Money entries were moved into the diary.",wateredon:"Watering logged",errsync:"Could not save online, will retry",errcode:"Wrong or expired code. Send a new one.",erremail:"Could not send the email. Try again in a while.",nonum:"Numbers only"});
 
 const K = {
  sowing:{e:"🌱",ta:"விதைப்பு",en:"Sowing",u:"kg",m:"c",pc:1},
@@ -34,6 +34,22 @@ const rs = x => "₹" + Math.round(x || 0).toLocaleString("en-IN");
 
 let sess = lg("sb_sess", null), cache = lg("diary_cache", []), outbox = lg("diary_outbox", []), members = lg("diary_members", []);
 let st = {busy:false, err:null, notMember:false, step: "email", email: (sess && sess.email) || lg("sb_email", ""), msg: null};
+// back from the email link: tokens arrive in the address (#access_token=...)
+function fromLink() {
+  const h = new URLSearchParams(location.hash.slice(1));
+  if (!h.get("access_token") && !h.get("error_description")) return false;
+  if (h.get("access_token")) {
+    let em = st.email;
+    try { em = JSON.parse(atob(h.get("access_token").split(".")[1].replace(/-/g, "+").replace(/_/g, "/"))).email || em; } catch (e) {}
+    keep({access_token: h.get("access_token"), refresh_token: h.get("refresh_token"), expires_at: +h.get("expires_at") || 0, expires_in: +h.get("expires_in") || 3600}, em);
+    st.email = em; st.step = "email"; st.msg = "welcome";
+  } else { st.msg = "errlink"; st.step = "email"; }
+  try { tab = "diary"; } catch (e) {}
+  history.replaceState(null, "", location.pathname + location.search);
+  return true;
+}
+fromLink();
+addEventListener("hashchange", () => { if (fromLink()) { go(); sync(); } });
 let DF = null, filt = "all", period = "tyear", shown = 40;
 
 // ---- one-time: move old Money tab entries into the diary ----
@@ -126,12 +142,13 @@ function syncLine() {
   return outbox.length ? `${outbox.length} ${t("waiting")}` : t("synced");
 }
 
-// ---- sign in with a 6-digit email code ----
+// ---- sign in: the email has a link (default Supabase email); a 6-digit code also works if the template sends one ----
 window.dSend = async () => {
   const em = (document.getElementById("dem").value || "").trim().toLowerCase();
   if (!/^\S+@\S+\.\S+$/.test(em)) return;
   st.email = em; ls("sb_email", em); st.msg = null;
-  try { await authPost("otp", {email: em, create_user: true}); st.step = "code"; st.msg = "codesent"; }
+  const back = encodeURIComponent(location.origin + location.pathname);
+  try { await authPost("otp?redirect_to=" + back, {email: em, create_user: true}); st.step = "sent"; st.msg = "sentlink"; }
   catch (e) { st.msg = "erremail"; console.warn(e); }
   document.activeElement && document.activeElement.blur(); go();
 };
@@ -142,6 +159,9 @@ window.dVerify = async () => {
   catch (e) { st.msg = "errcode"; go(); }
 };
 window.dBack = () => { st.step = "email"; st.msg = null; go(); };
+window.dSend2 = async () => { st.msg = null; const back = encodeURIComponent(location.origin + location.pathname);
+  try { await authPost("otp?redirect_to=" + back, {email: st.email, create_user: true}); st.msg = "sentlink"; } catch (e) { st.msg = "erremail"; } go(); };
+window.dCode = () => { st.step = "code"; st.msg = null; go(); };
 window.dOut = () => { sess = null; ls("sb_sess", null); cache = []; ls("diary_cache", []); go(); };
 
 // ---- entry form ----
@@ -211,6 +231,8 @@ function signin() {
   return `<div class="card lv-info"><h2>${t("dsign")}</h2><div class="mut" style="margin-bottom:8px">${t("dsignwhy")}</div>
   ${st.step == "email"
     ? `<input id="dem" type="email" autocomplete="email" placeholder="${t("email")}" value="${esc(st.email)}"><button class="btn" onclick="dSend()">${t("sendcode")}</button>`
+    : st.step == "sent"
+    ? `<div class="mut">${esc(st.email)}</div><div class="row" style="margin-top:8px"><div><button class="btn" style="background:var(--line);color:var(--ink)" onclick="dSend2()">↻ ${t("sendcode")}</button></div><div><button class="btn" style="background:var(--line);color:var(--ink)" onclick="dBack()">${t("back")}</button></div></div><a href="#" class="mut" style="display:block;margin-top:10px" onclick="dCode();return false">${t("havecode")}</a>`
     : `<div class="mut">${esc(st.email)}</div><input id="dcode" inputmode="numeric" autocomplete="one-time-code" maxlength="10" placeholder="${t("code")}"><div class="row"><div><button class="btn" onclick="dVerify()">${t("verify")}</button></div><div><button class="btn" style="background:var(--line);color:var(--ink)" onclick="dBack()">${t("back")}</button></div></div>`}
   ${st.msg ? `<div style="margin-top:8px">${t(st.msg)}</div>` : ""}</div>`;
 }
@@ -227,8 +249,8 @@ window.diary = function () {
   const i = per.filter(e => e.amount > 0 && e.kind == "sale").reduce((s, e) => s + +e.amount, 0);
   const ac = (F && F.farm.area_acres_from_boundary) || 8.2;
   const list = all.filter(FILT[filt] || (() => true));
-  const msg = st.msg == "oldmoved" ? `<div class="card lv-info">${t("oldmoved")}</div>` : "";
-  if (st.msg == "oldmoved") st.msg = null;
+  const msg = st.msg == "oldmoved" || st.msg == "welcome" ? `<div class="card lv-ok">${t(st.msg)}</div>` : "";
+  if (st.msg == "oldmoved" || st.msg == "welcome") st.msg = null;
   let lastM = "";
   const rows = list.slice(0, shown).map(e => {
     const m = e.entry_date.slice(0, 7), head = m != lastM ? `<div class="mut" style="margin:12px 0 4px;font-weight:700">${new Date(m + "-01").toLocaleDateString(L == "ta" ? "ta-IN" : "en-IN", {month:"long", year:"numeric"})}</div>` : "";
