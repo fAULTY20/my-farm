@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-10T05:46:08+05:30",
+ "generated_at": "2026-11-10T10:19:18+05:30",
  "source": "Open-Meteo (model forecast + recent model data)",
  "location": {
   "lat": 10.514043,
@@ -7,12 +7,12 @@
  },
  "today": "2026-11-10",
  "current": {
-  "temp_c": 23.1,
-  "humidity_pct": 91,
-  "wind_kmh": 9.8,
+  "temp_c": 28.7,
+  "humidity_pct": 61,
+  "wind_kmh": 12.2,
   "rain_now_mm": 0.0,
-  "weather_en": "Partly cloudy",
-  "weather_ta": "பகுதி மேகமூட்டம்"
+  "weather_en": "Clear sky",
+  "weather_ta": "தெளிவான வானம்"
  },
  "today_summary": {
   "date": "2026-11-10",
@@ -20,14 +20,14 @@
   "weekday_ta": "செவ்வாய்",
   "is_forecast": true,
   "is_today": true,
-  "tmax": 30.4,
-  "tmin": 22.9,
-  "rain_mm": 0.2,
-  "rain_prob": 16,
-  "wind_kmh": 16.6,
-  "et0_mm": 4.53,
-  "weather_en": "Drizzle",
-  "weather_ta": "தூறல்"
+  "tmax": 30.2,
+  "tmin": 23.0,
+  "rain_mm": 0.0,
+  "rain_prob": 27,
+  "wind_kmh": 17.3,
+  "et0_mm": 4.83,
+  "weather_en": "Partly cloudy",
+  "weather_ta": "பகுதி மேகமூட்டம்"
  },
  "forecast": [
   {
@@ -36,14 +36,14 @@
    "weekday_ta": "செவ்வாய்",
    "is_forecast": true,
    "is_today": true,
-   "tmax": 30.4,
-   "tmin": 22.9,
-   "rain_mm": 0.2,
-   "rain_prob": 16,
-   "wind_kmh": 16.6,
-   "et0_mm": 4.53,
-   "weather_en": "Drizzle",
-   "weather_ta": "தூறல்"
+   "tmax": 30.2,
+   "tmin": 23.0,
+   "rain_mm": 0.0,
+   "rain_prob": 27,
+   "wind_kmh": 17.3,
+   "et0_mm": 4.83,
+   "weather_en": "Partly cloudy",
+   "weather_ta": "பகுதி மேகமூட்டம்"
   },
   {
    "date": "2026-11-11",
@@ -52,11 +52,11 @@
    "is_forecast": true,
    "is_today": false,
    "tmax": 30.2,
-   "tmin": 21.6,
+   "tmin": 21.3,
    "rain_mm": 0.0,
-   "rain_prob": 17,
-   "wind_kmh": 12.9,
-   "et0_mm": 4.64,
+   "rain_prob": 8,
+   "wind_kmh": 11.9,
+   "et0_mm": 4.52,
    "weather_en": "Partly cloudy",
    "weather_ta": "பகுதி மேகமூட்டம்"
   },
@@ -69,9 +69,9 @@
    "tmax": 30.2,
    "tmin": 22.0,
    "rain_mm": 0.0,
-   "rain_prob": 20,
-   "wind_kmh": 13.1,
-   "et0_mm": 4.62,
+   "rain_prob": 12,
+   "wind_kmh": 13.0,
+   "et0_mm": 4.66,
    "weather_en": "Partly cloudy",
    "weather_ta": "பகுதி மேகமூட்டம்"
   },
@@ -82,11 +82,11 @@
    "is_forecast": true,
    "is_today": false,
    "tmax": 30.7,
-   "tmin": 22.0,
+   "tmin": 22.1,
    "rain_mm": 0.0,
-   "rain_prob": 17,
-   "wind_kmh": 12.0,
-   "et0_mm": 4.81,
+   "rain_prob": 8,
+   "wind_kmh": 13.3,
+   "et0_mm": 4.53,
    "weather_en": "Partly cloudy",
    "weather_ta": "பகுதி மேகமூட்டம்"
   },
@@ -96,14 +96,14 @@
    "weekday_ta": "சனி",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 30.9,
-   "tmin": 22.3,
-   "rain_mm": 0.0,
-   "rain_prob": 33,
-   "wind_kmh": 12.6,
-   "et0_mm": 4.15,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
+   "tmax": 31.6,
+   "tmin": 22.7,
+   "rain_mm": 3.0,
+   "rain_prob": 45,
+   "wind_kmh": 11.4,
+   "et0_mm": 3.87,
+   "weather_en": "Drizzle",
+   "weather_ta": "தூறல்"
   },
   {
    "date": "2026-11-15",
@@ -111,12 +111,12 @@
    "weekday_ta": "ஞாயிறு",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 29.8,
+   "tmax": 30.2,
    "tmin": 22.5,
-   "rain_mm": 2.4,
-   "rain_prob": 64,
-   "wind_kmh": 11.1,
-   "et0_mm": 2.22,
+   "rain_mm": 1.2,
+   "rain_prob": 70,
+   "wind_kmh": 14.3,
+   "et0_mm": 3.11,
    "weather_en": "Drizzle",
    "weather_ta": "தூறல்"
   },
@@ -343,7 +343,7 @@
    "rain_mm": 6.4,
    "rain_prob": 95,
    "wind_kmh": 17.5,
-   "et0_mm": 3.34,
+   "et0_mm": 3.35,
    "weather_en": "Rain",
    "weather_ta": "மழை"
   }
@@ -354,8 +354,8 @@
   "last_30_days_mm": 235.2,
   "last_45_days_mm": 297.2,
   "days_since_rain": 1,
-  "next_3_days_mm": 0.2,
-  "next_7_days_mm": 2.6,
+  "next_3_days_mm": 0.0,
+  "next_7_days_mm": 4.2,
   "since_date": "2026-09-26"
  },
  "alerts": [
@@ -477,15 +477,15 @@
   "projection": [
    {
     "date": "2026-11-10",
-    "deficit_mm": 4.1
+    "deficit_mm": 4.3
    },
    {
     "date": "2026-11-11",
-    "deficit_mm": 8.3
+    "deficit_mm": 8.4
    },
    {
     "date": "2026-11-12",
-    "deficit_mm": 12.4
+    "deficit_mm": 12.6
    },
    {
     "date": "2026-11-13",
@@ -493,15 +493,15 @@
    },
    {
     "date": "2026-11-14",
-    "deficit_mm": 20.5
+    "deficit_mm": 17.2
    },
    {
     "date": "2026-11-15",
-    "deficit_mm": 20.1
+    "deficit_mm": 20.0
    },
    {
     "date": "2026-11-16",
-    "deficit_mm": 22.8
+    "deficit_mm": 22.7
    }
   ],
   "check_en": "Check by hand: squeeze soil from 10 cm deep. If it will not hold a ball, it is dry.",
