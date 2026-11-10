@@ -1,62 +1,47 @@
 {
- "generated_at": "2026-11-10T10:19:18+05:30",
+ "generated_at": "2026-11-11T00:20:38+05:30",
  "source": "Open-Meteo (model forecast + recent model data)",
  "location": {
   "lat": 10.514043,
   "lon": 78.276403
  },
- "today": "2026-11-10",
+ "today": "2026-11-11",
  "current": {
-  "temp_c": 28.7,
-  "humidity_pct": 61,
-  "wind_kmh": 12.2,
+  "temp_c": 23.5,
+  "humidity_pct": 92,
+  "wind_kmh": 7.0,
   "rain_now_mm": 0.0,
-  "weather_en": "Clear sky",
-  "weather_ta": "தெளிவான வானம்"
+  "weather_en": "Partly cloudy",
+  "weather_ta": "பகுதி மேகமூட்டம்"
  },
  "today_summary": {
-  "date": "2026-11-10",
-  "weekday_en": "Tuesday",
-  "weekday_ta": "செவ்வாய்",
+  "date": "2026-11-11",
+  "weekday_en": "Wednesday",
+  "weekday_ta": "புதன்",
   "is_forecast": true,
   "is_today": true,
-  "tmax": 30.2,
-  "tmin": 23.0,
+  "tmax": 30.3,
+  "tmin": 22.0,
   "rain_mm": 0.0,
-  "rain_prob": 27,
-  "wind_kmh": 17.3,
-  "et0_mm": 4.83,
+  "rain_prob": 22,
+  "wind_kmh": 14.3,
+  "et0_mm": 4.54,
   "weather_en": "Partly cloudy",
   "weather_ta": "பகுதி மேகமூட்டம்"
  },
  "forecast": [
   {
-   "date": "2026-11-10",
-   "weekday_en": "Tuesday",
-   "weekday_ta": "செவ்வாய்",
-   "is_forecast": true,
-   "is_today": true,
-   "tmax": 30.2,
-   "tmin": 23.0,
-   "rain_mm": 0.0,
-   "rain_prob": 27,
-   "wind_kmh": 17.3,
-   "et0_mm": 4.83,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
-  },
-  {
    "date": "2026-11-11",
    "weekday_en": "Wednesday",
    "weekday_ta": "புதன்",
    "is_forecast": true,
-   "is_today": false,
-   "tmax": 30.2,
-   "tmin": 21.3,
+   "is_today": true,
+   "tmax": 30.3,
+   "tmin": 22.0,
    "rain_mm": 0.0,
-   "rain_prob": 8,
-   "wind_kmh": 11.9,
-   "et0_mm": 4.52,
+   "rain_prob": 22,
+   "wind_kmh": 14.3,
+   "et0_mm": 4.54,
    "weather_en": "Partly cloudy",
    "weather_ta": "பகுதி மேகமூட்டம்"
   },
@@ -66,12 +51,12 @@
    "weekday_ta": "வியாழன்",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 30.2,
-   "tmin": 22.0,
+   "tmax": 30.4,
+   "tmin": 22.2,
    "rain_mm": 0.0,
-   "rain_prob": 12,
-   "wind_kmh": 13.0,
-   "et0_mm": 4.66,
+   "rain_prob": 6,
+   "wind_kmh": 13.2,
+   "et0_mm": 4.73,
    "weather_en": "Partly cloudy",
    "weather_ta": "பகுதி மேகமூட்டம்"
   },
@@ -82,11 +67,11 @@
    "is_forecast": true,
    "is_today": false,
    "tmax": 30.7,
-   "tmin": 22.1,
+   "tmin": 22.0,
    "rain_mm": 0.0,
-   "rain_prob": 8,
-   "wind_kmh": 13.3,
-   "et0_mm": 4.53,
+   "rain_prob": 2,
+   "wind_kmh": 11.9,
+   "et0_mm": 4.73,
    "weather_en": "Partly cloudy",
    "weather_ta": "பகுதி மேகமூட்டம்"
   },
@@ -96,14 +81,14 @@
    "weekday_ta": "சனி",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 31.6,
-   "tmin": 22.7,
-   "rain_mm": 3.0,
-   "rain_prob": 45,
-   "wind_kmh": 11.4,
-   "et0_mm": 3.87,
-   "weather_en": "Drizzle",
-   "weather_ta": "தூறல்"
+   "tmax": 29.2,
+   "tmin": 22.1,
+   "rain_mm": 10.5,
+   "rain_prob": 60,
+   "wind_kmh": 14.0,
+   "et0_mm": 2.66,
+   "weather_en": "Rain",
+   "weather_ta": "மழை"
   },
   {
    "date": "2026-11-15",
@@ -111,14 +96,14 @@
    "weekday_ta": "ஞாயிறு",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 30.2,
-   "tmin": 22.5,
-   "rain_mm": 1.2,
-   "rain_prob": 70,
-   "wind_kmh": 14.3,
-   "et0_mm": 3.11,
-   "weather_en": "Drizzle",
-   "weather_ta": "தூறல்"
+   "tmax": 29.3,
+   "tmin": 22.4,
+   "rain_mm": 7.8,
+   "rain_prob": 59,
+   "wind_kmh": 12.0,
+   "et0_mm": 2.17,
+   "weather_en": "Rain",
+   "weather_ta": "மழை"
   },
   {
    "date": "2026-11-16",
@@ -126,32 +111,17 @@
    "weekday_ta": "திங்கள்",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 29.5,
-   "tmin": 21.8,
-   "rain_mm": 0.0,
-   "rain_prob": 61,
-   "wind_kmh": 9.5,
-   "et0_mm": 3.0,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
+   "tmax": 31.0,
+   "tmin": 22.5,
+   "rain_mm": 2.7,
+   "rain_prob": 47,
+   "wind_kmh": 9.9,
+   "et0_mm": 3.29,
+   "weather_en": "Drizzle",
+   "weather_ta": "தூறல்"
   }
  ],
  "recent_days": [
-  {
-   "date": "2026-10-27",
-   "weekday_en": "Tuesday",
-   "weekday_ta": "செவ்வாய்",
-   "is_forecast": false,
-   "is_today": false,
-   "tmax": 31.8,
-   "tmin": 23.2,
-   "rain_mm": 0.0,
-   "rain_prob": 13,
-   "wind_kmh": 11.5,
-   "et0_mm": 4.87,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
-  },
   {
    "date": "2026-10-28",
    "weekday_en": "Wednesday",
@@ -346,16 +316,31 @@
    "et0_mm": 3.35,
    "weather_en": "Rain",
    "weather_ta": "மழை"
+  },
+  {
+   "date": "2026-11-10",
+   "weekday_en": "Tuesday",
+   "weekday_ta": "செவ்வாய்",
+   "is_forecast": false,
+   "is_today": false,
+   "tmax": 30.4,
+   "tmin": 23.3,
+   "rain_mm": 0.5,
+   "rain_prob": 33,
+   "wind_kmh": 17.3,
+   "et0_mm": 4.62,
+   "weather_en": "Drizzle",
+   "weather_ta": "தூறல்"
   }
  ],
  "recent_rain": {
-  "last_7_days_mm": 54.4,
-  "last_14_days_mm": 57.2,
-  "last_30_days_mm": 235.2,
-  "last_45_days_mm": 297.2,
-  "days_since_rain": 1,
+  "last_7_days_mm": 53.8,
+  "last_14_days_mm": 57.7,
+  "last_30_days_mm": 234.7,
+  "last_45_days_mm": 297.7,
+  "days_since_rain": 2,
   "next_3_days_mm": 0.0,
-  "next_7_days_mm": 4.2,
+  "next_7_days_mm": 21.0,
   "since_date": "2026-09-26"
  },
  "alerts": [
@@ -367,8 +352,8 @@
    "title_ta": "மருந்து தெளிக்க ஏற்ற நாள்",
    "action_en": "Low rain chance and light wind. Spray early morning or late afternoon.",
    "action_ta": "மழை வாய்ப்பு குறைவு, காற்று மிதம். காலை அல்லது மாலை நேரத்தில் தெளிக்கவும்.",
-   "detail_en": "Best: tomorrow.",
-   "detail_ta": "சிறந்த நாள்: நாளை."
+   "detail_en": "Best: today.",
+   "detail_ta": "சிறந்த நாள்: இன்று."
   }
  ],
  "todays_action": {
@@ -378,23 +363,17 @@
  },
  "water": {
   "status": "ok",
-  "moisture_pct": 100,
-  "deficit_mm": 0.0,
+  "moisture_pct": 91,
+  "deficit_mm": 4.2,
   "taw_mm": 44.0,
   "raw_mm": 22.0,
   "irrigate_mm": 0,
   "litres_per_acre": 0,
   "rain_next_2_days_mm": 0,
-  "next_need_in_days": 6,
-  "text_en": "No irrigation needed. Soil moisture is about 100%. Next watering likely in about 6 days.",
-  "text_ta": "பாசனம் தேவையில்லை. மண் ஈரம் சுமார் 100%. அடுத்த பாசனம் சுமார் 6 நாட்களில் தேவைப்படலாம்.",
+  "next_need_in_days": null,
+  "text_en": "No irrigation needed. Soil moisture is about 91%. Not needed in the next 6 days unless the forecast changes.",
+  "text_ta": "பாசனம் தேவையில்லை. மண் ஈரம் சுமார் 91%. முன்னறிவிப்பு மாறாவிட்டால் அடுத்த 6 நாட்களுக்குத் தேவையில்லை.",
   "history": [
-   {
-    "date": "2026-10-27",
-    "deficit_mm": 4.4,
-    "rain_mm": 0.0,
-    "use_mm": 4.4
-   },
    {
     "date": "2026-10-28",
     "deficit_mm": 8.9,
@@ -472,36 +451,38 @@
     "deficit_mm": 0.0,
     "rain_mm": 6.4,
     "use_mm": 3.0
+   },
+   {
+    "date": "2026-11-10",
+    "deficit_mm": 4.2,
+    "rain_mm": 0.0,
+    "use_mm": 4.2
    }
   ],
   "projection": [
    {
-    "date": "2026-11-10",
-    "deficit_mm": 4.3
-   },
-   {
     "date": "2026-11-11",
-    "deficit_mm": 8.4
+    "deficit_mm": 8.2
    },
    {
     "date": "2026-11-12",
-    "deficit_mm": 12.6
+    "deficit_mm": 12.5
    },
    {
     "date": "2026-11-13",
-    "deficit_mm": 16.7
+    "deficit_mm": 16.8
    },
    {
     "date": "2026-11-14",
-    "deficit_mm": 17.2
+    "deficit_mm": 8.7
    },
    {
     "date": "2026-11-15",
-    "deficit_mm": 20.0
+    "deficit_mm": 2.8
    },
    {
     "date": "2026-11-16",
-    "deficit_mm": 22.7
+    "deficit_mm": 3.1
    }
   ],
   "check_en": "Check by hand: squeeze soil from 10 cm deep. If it will not hold a ball, it is dry.",
