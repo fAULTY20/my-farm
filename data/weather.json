@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T09:08:04+05:30",
+ "generated_at": "2026-11-14T22:49:11+05:30",
  "source": "Open-Meteo (model forecast + recent model data)",
  "location": {
   "lat": 10.514043,
@@ -7,9 +7,9 @@
  },
  "today": "2026-11-14",
  "current": {
-  "temp_c": 27.2,
-  "humidity_pct": 69,
-  "wind_kmh": 9.2,
+  "temp_c": 25.0,
+  "humidity_pct": 83,
+  "wind_kmh": 7.8,
   "rain_now_mm": 0.0,
   "weather_en": "Partly cloudy",
   "weather_ta": "பகுதி மேகமூட்டம்"
@@ -20,12 +20,12 @@
   "weekday_ta": "சனி",
   "is_forecast": true,
   "is_today": true,
-  "tmax": 31.4,
-  "tmin": 23.0,
+  "tmax": 31.5,
+  "tmin": 23.1,
   "rain_mm": 0.1,
   "rain_prob": 5,
-  "wind_kmh": 14.3,
-  "et0_mm": 4.68,
+  "wind_kmh": 11.0,
+  "et0_mm": 4.37,
   "weather_en": "Drizzle",
   "weather_ta": "தூறல்"
  },
@@ -36,12 +36,12 @@
    "weekday_ta": "சனி",
    "is_forecast": true,
    "is_today": true,
-   "tmax": 31.4,
-   "tmin": 23.0,
+   "tmax": 31.5,
+   "tmin": 23.1,
    "rain_mm": 0.1,
    "rain_prob": 5,
-   "wind_kmh": 14.3,
-   "et0_mm": 4.68,
+   "wind_kmh": 11.0,
+   "et0_mm": 4.37,
    "weather_en": "Drizzle",
    "weather_ta": "தூறல்"
   },
@@ -51,14 +51,14 @@
    "weekday_ta": "ஞாயிறு",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 31.5,
-   "tmin": 23.0,
-   "rain_mm": 0.0,
+   "tmax": 31.1,
+   "tmin": 23.1,
+   "rain_mm": 0.5,
    "rain_prob": 4,
-   "wind_kmh": 14.8,
-   "et0_mm": 3.89,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
+   "wind_kmh": 15.3,
+   "et0_mm": 3.47,
+   "weather_en": "Drizzle",
+   "weather_ta": "தூறல்"
   },
   {
    "date": "2026-11-16",
@@ -66,12 +66,12 @@
    "weekday_ta": "திங்கள்",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 32.8,
-   "tmin": 22.8,
-   "rain_mm": 1.0,
+   "tmax": 32.5,
+   "tmin": 22.9,
+   "rain_mm": 1.9,
    "rain_prob": 29,
-   "wind_kmh": 11.5,
-   "et0_mm": 4.28,
+   "wind_kmh": 10.4,
+   "et0_mm": 4.2,
    "weather_en": "Drizzle",
    "weather_ta": "தூறல்"
   },
@@ -81,14 +81,14 @@
    "weekday_ta": "செவ்வாய்",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 32.3,
-   "tmin": 22.3,
-   "rain_mm": 0.0,
+   "tmax": 32.7,
+   "tmin": 22.7,
+   "rain_mm": 0.2,
    "rain_prob": 32,
-   "wind_kmh": 11.6,
-   "et0_mm": 4.42,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
+   "wind_kmh": 11.4,
+   "et0_mm": 4.45,
+   "weather_en": "Drizzle",
+   "weather_ta": "தூறல்"
   },
   {
    "date": "2026-11-18",
@@ -96,12 +96,12 @@
    "weekday_ta": "புதன்",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 32.7,
-   "tmin": 21.4,
+   "tmax": 32.3,
+   "tmin": 21.9,
    "rain_mm": 0.0,
    "rain_prob": 7,
-   "wind_kmh": 11.1,
-   "et0_mm": 4.83,
+   "wind_kmh": 10.3,
+   "et0_mm": 4.7,
    "weather_en": "Partly cloudy",
    "weather_ta": "பகுதி மேகமூட்டம்"
   },
@@ -111,14 +111,14 @@
    "weekday_ta": "வியாழன்",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 33.6,
-   "tmin": 20.3,
+   "tmax": 34.0,
+   "tmin": 21.3,
    "rain_mm": 0.0,
    "rain_prob": 19,
-   "wind_kmh": 12.7,
-   "et0_mm": 5.09,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
+   "wind_kmh": 11.7,
+   "et0_mm": 5.07,
+   "weather_en": "Fog",
+   "weather_ta": "மூடுபனி"
   },
   {
    "date": "2026-11-20",
@@ -126,14 +126,14 @@
    "weekday_ta": "வெள்ளி",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 33.2,
-   "tmin": 20.9,
-   "rain_mm": 0.0,
+   "tmax": 33.6,
+   "tmin": 22.1,
+   "rain_mm": 0.6,
    "rain_prob": 18,
-   "wind_kmh": 10.7,
-   "et0_mm": 4.49,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
+   "wind_kmh": 11.7,
+   "et0_mm": 4.61,
+   "weather_en": "Drizzle",
+   "weather_ta": "தூறல்"
   }
  ],
  "recent_days": [
@@ -354,8 +354,8 @@
   "last_30_days_mm": 226.8,
   "last_45_days_mm": 286.3,
   "days_since_rain": 5,
-  "next_3_days_mm": 1.1,
-  "next_7_days_mm": 1.1,
+  "next_3_days_mm": 2.5,
+  "next_7_days_mm": 3.3,
   "since_date": "2026-09-30"
  },
  "alerts": [
@@ -477,27 +477,27 @@
   "projection": [
    {
     "date": "2026-11-14",
-    "deficit_mm": 20.9
+    "deficit_mm": 20.6
    },
    {
     "date": "2026-11-15",
-    "deficit_mm": 24.4
+    "deficit_mm": 23.8
    },
    {
     "date": "2026-11-16",
-    "deficit_mm": 28.3
+    "deficit_mm": 27.5
    },
    {
     "date": "2026-11-17",
-    "deficit_mm": 32.3
+    "deficit_mm": 31.6
    },
    {
     "date": "2026-11-18",
-    "deficit_mm": 36.6
+    "deficit_mm": 35.8
    },
    {
     "date": "2026-11-19",
-    "deficit_mm": 41.2
+    "deficit_mm": 40.3
    },
    {
     "date": "2026-11-20",
