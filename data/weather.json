@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T01:07:47+05:30",
+ "generated_at": "2026-11-19T04:27:20+05:30",
  "source": "Open-Meteo (model forecast + recent model data)",
  "location": {
   "lat": 10.514043,
@@ -7,9 +7,9 @@
  },
  "today": "2026-11-19",
  "current": {
-  "temp_c": 23.3,
-  "humidity_pct": 69,
-  "wind_kmh": 7.5,
+  "temp_c": 22.1,
+  "humidity_pct": 76,
+  "wind_kmh": 2.2,
   "rain_now_mm": 0.0,
   "weather_en": "Clear sky",
   "weather_ta": "தெளிவான வானம்"
