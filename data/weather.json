@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T00:46:06+05:30",
+ "generated_at": "2026-11-21T04:10:58+05:30",
  "source": "Open-Meteo (model forecast + recent model data)",
  "location": {
   "lat": 10.514043,
@@ -7,9 +7,9 @@
  },
  "today": "2026-11-21",
  "current": {
-  "temp_c": 23.5,
-  "humidity_pct": 83,
-  "wind_kmh": 6.0,
+  "temp_c": 22.4,
+  "humidity_pct": 88,
+  "wind_kmh": 4.9,
   "rain_now_mm": 0.0,
   "weather_en": "Partly cloudy",
   "weather_ta": "பகுதி மேகமூட்டம்"
