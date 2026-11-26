@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T05:52:58+05:30",
+ "generated_at": "2026-11-26T11:00:02+05:30",
  "source": "Open-Meteo (model forecast + recent model data)",
  "location": {
   "lat": 10.514043,
@@ -7,12 +7,12 @@
  },
  "today": "2026-11-26",
  "current": {
-  "temp_c": 23.1,
-  "humidity_pct": 98,
-  "wind_kmh": 7.8,
-  "rain_now_mm": 0.1,
-  "weather_en": "Drizzle",
-  "weather_ta": "தூறல்"
+  "temp_c": 27.4,
+  "humidity_pct": 77,
+  "wind_kmh": 12.2,
+  "rain_now_mm": 0.0,
+  "weather_en": "Partly cloudy",
+  "weather_ta": "பகுதி மேகமூட்டம்"
  },
  "today_summary": {
   "date": "2026-11-26",
@@ -21,11 +21,11 @@
   "is_forecast": true,
   "is_today": true,
   "tmax": 27.8,
-  "tmin": 23.1,
-  "rain_mm": 15.5,
-  "rain_prob": 99,
-  "wind_kmh": 12.2,
-  "et0_mm": 2.21,
+  "tmin": 23.0,
+  "rain_mm": 15.4,
+  "rain_prob": 100,
+  "wind_kmh": 13.0,
+  "et0_mm": 2.27,
   "weather_en": "Thunderstorm",
   "weather_ta": "இடியுடன் கூடிய மழை"
  },
@@ -37,11 +37,11 @@
    "is_forecast": true,
    "is_today": true,
    "tmax": 27.8,
-   "tmin": 23.1,
-   "rain_mm": 15.5,
-   "rain_prob": 99,
-   "wind_kmh": 12.2,
-   "et0_mm": 2.21,
+   "tmin": 23.0,
+   "rain_mm": 15.4,
+   "rain_prob": 100,
+   "wind_kmh": 13.0,
+   "et0_mm": 2.27,
    "weather_en": "Thunderstorm",
    "weather_ta": "இடியுடன் கூடிய மழை"
   },
@@ -51,14 +51,14 @@
    "weekday_ta": "வெள்ளி",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 29.5,
-   "tmin": 22.5,
-   "rain_mm": 6.1,
-   "rain_prob": 73,
-   "wind_kmh": 13.0,
-   "et0_mm": 3.1,
-   "weather_en": "Rain",
-   "weather_ta": "மழை"
+   "tmax": 29.6,
+   "tmin": 22.8,
+   "rain_mm": 1.8,
+   "rain_prob": 53,
+   "wind_kmh": 14.3,
+   "et0_mm": 3.89,
+   "weather_en": "Drizzle",
+   "weather_ta": "தூறல்"
   },
   {
    "date": "2026-11-28",
@@ -66,12 +66,12 @@
    "weekday_ta": "சனி",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 28.1,
+   "tmax": 28.0,
    "tmin": 22.4,
-   "rain_mm": 13.9,
+   "rain_mm": 11.0,
    "rain_prob": 100,
-   "wind_kmh": 14.8,
-   "et0_mm": 2.62,
+   "wind_kmh": 14.3,
+   "et0_mm": 2.5,
    "weather_en": "Rain",
    "weather_ta": "மழை"
   },
@@ -81,12 +81,12 @@
    "weekday_ta": "ஞாயிறு",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 27.7,
-   "tmin": 21.1,
-   "rain_mm": 3.5,
-   "rain_prob": 77,
-   "wind_kmh": 20.0,
-   "et0_mm": 3.16,
+   "tmax": 28.2,
+   "tmin": 21.5,
+   "rain_mm": 2.4,
+   "rain_prob": 73,
+   "wind_kmh": 19.2,
+   "et0_mm": 3.43,
    "weather_en": "Drizzle",
    "weather_ta": "தூறல்"
   },
@@ -96,14 +96,14 @@
    "weekday_ta": "திங்கள்",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 27.4,
-   "tmin": 19.9,
+   "tmax": 28.1,
+   "tmin": 20.4,
    "rain_mm": 0.0,
    "rain_prob": 0,
-   "wind_kmh": 12.1,
-   "et0_mm": 4.28,
-   "weather_en": "Clear sky",
-   "weather_ta": "தெளிவான வானம்"
+   "wind_kmh": 14.0,
+   "et0_mm": 4.16,
+   "weather_en": "Partly cloudy",
+   "weather_ta": "பகுதி மேகமூட்டம்"
   },
   {
    "date": "2026-12-01",
@@ -111,14 +111,14 @@
    "weekday_ta": "செவ்வாய்",
    "is_forecast": true,
    "is_today": false,
-   "tmax": 28.0,
-   "tmin": 19.4,
-   "rain_mm": 0.0,
-   "rain_prob": 8,
-   "wind_kmh": 14.3,
-   "et0_mm": 3.49,
-   "weather_en": "Partly cloudy",
-   "weather_ta": "பகுதி மேகமூட்டம்"
+   "tmax": 28.2,
+   "tmin": 20.5,
+   "rain_mm": 2.1,
+   "rain_prob": 14,
+   "wind_kmh": 13.4,
+   "et0_mm": 3.52,
+   "weather_en": "Drizzle",
+   "weather_ta": "தூறல்"
   },
   {
    "date": "2026-12-02",
@@ -354,8 +354,8 @@
   "last_30_days_mm": 88.8,
   "last_45_days_mm": 265.8,
   "days_since_rain": 0,
-  "next_3_days_mm": 35.5,
-  "next_7_days_mm": 43.8,
+  "next_3_days_mm": 28.2,
+  "next_7_days_mm": 37.5,
   "since_date": "2026-10-12"
  },
  "alerts": [
@@ -367,19 +367,8 @@
    "title_ta": "மழை எதிர்பார்ப்பு",
    "action_en": "Do spraying and fertiliser after the rain, not before.",
    "action_ta": "மருந்து தெளித்தல், உரமிடுதலை மழைக்குப் பிறகு செய்யுங்கள்.",
-   "detail_en": "About 16 mm expected today.",
-   "detail_ta": "இன்று சுமார் 16 மி.மீ மழை எதிர்பார்க்கப்படுகிறது."
-  },
-  {
-   "id": "soil_wetting",
-   "level": "info",
-   "date": "2026-11-26",
-   "title_en": "Soil moisture may improve",
-   "title_ta": "மண் ஈரம் கூடும் வாய்ப்பு",
-   "action_en": "Check moisture in the field before deciding on sowing. Do not rely on forecast alone.",
-   "action_ta": "விதைப்பு முடிவுக்கு முன் வயலில் மண் ஈரத்தை நேரில் சோதியுங்கள். முன்னறிவிப்பை மட்டும் நம்ப வேண்டாம்.",
-   "detail_en": "44 mm forecast in 7 days after 30 mm last week.",
-   "detail_ta": "கடந்த வாரம் 30 மி.மீ; அடுத்த 7 நாட்களில் 44 மி.மீ எதிர்பார்ப்பு."
+   "detail_en": "About 15 mm expected today.",
+   "detail_ta": "இன்று சுமார் 15 மி.மீ மழை எதிர்பார்க்கப்படுகிறது."
   }
  ],
  "todays_action": {
@@ -395,10 +384,10 @@
   "raw_mm": 22.0,
   "irrigate_mm": 0,
   "litres_per_acre": 0,
-  "rain_next_2_days_mm": 21.6,
+  "rain_next_2_days_mm": 15.4,
   "next_need_in_days": null,
-  "text_en": "Soil is getting dry, but about 22 mm of rain is expected by tomorrow. Wait for the rain. If it has not rained by tomorrow evening, irrigate.",
-  "text_ta": "மண் காய்ந்து வருகிறது, ஆனால் நாளைக்குள் சுமார் 22 மி.மீ மழை எதிர்பார்க்கப்படுகிறது. மழைக்காகக் காத்திருங்கள். நாளை மாலைக்குள் மழை பெய்யாவிட்டால் பாசனம் செய்யுங்கள்.",
+  "text_en": "Soil is getting dry, but about 15 mm of rain is expected by tomorrow. Wait for the rain. If it has not rained by tomorrow evening, irrigate.",
+  "text_ta": "மண் காய்ந்து வருகிறது, ஆனால் நாளைக்குள் சுமார் 15 மி.மீ மழை எதிர்பார்க்கப்படுகிறது. மழைக்காகக் காத்திருங்கள். நாளை மாலைக்குள் மழை பெய்யாவிட்டால் பாசனம் செய்யுங்கள்.",
   "history": [
    {
     "date": "2026-11-12",
@@ -488,31 +477,31 @@
   "projection": [
    {
     "date": "2026-11-26",
-    "deficit_mm": 9.3
+    "deficit_mm": 9.4
    },
    {
     "date": "2026-11-27",
-    "deficit_mm": 6.0
+    "deficit_mm": 12.9
    },
    {
     "date": "2026-11-28",
-    "deficit_mm": 0.0
+    "deficit_mm": 4.2
    },
    {
     "date": "2026-11-29",
-    "deficit_mm": 0.0
+    "deficit_mm": 4.9
    },
    {
     "date": "2026-11-30",
-    "deficit_mm": 3.9
+    "deficit_mm": 8.6
    },
    {
     "date": "2026-12-01",
-    "deficit_mm": 7.0
+    "deficit_mm": 9.7
    },
    {
     "date": "2026-12-02",
-    "deficit_mm": 4.5
+    "deficit_mm": 7.2
    }
   ],
   "check_en": "Check by hand: squeeze soil from 10 cm deep. If it will not hold a ball, it is dry.",
